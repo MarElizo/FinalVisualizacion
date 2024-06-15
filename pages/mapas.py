@@ -14,9 +14,9 @@ st.set_page_config(layout="wide")
 def load_data(file, sheet_name):
     return pd.read_excel(file, sheet_name=sheet_name)
 
-aire = load_data("../fin.xlsx", sheet_name="aire")
-asma = load_data("../fin.xlsx", sheet_name="asma")
-cancer = load_data("../fin.xlsx", sheet_name="cancer")
+aire = load_data("fin.xlsx", sheet_name="aire")
+asma = load_data("fin.xlsx", sheet_name="asma")
+cancer = load_data("fin.xlsx", sheet_name="cancer")
 
 #carga del mapa
 us_states = gpd.read_file('tl_2023_us_state/tl_2023_us_state.shp')
