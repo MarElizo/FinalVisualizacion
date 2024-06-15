@@ -10,11 +10,11 @@ def load_data(file, sheet_name):
     return pd.read_excel(file, sheet_name=sheet_name)
 
 # cargar datos
-aire = load_data("../fin.xlsx", sheet_name="aire")
-asma = load_data("../fin.xlsx", sheet_name="asma")
-cancer = load_data("../fin.xlsx", sheet_name="cancer")
-aire_2 = pd.read_excel("../fin2.xlsx", sheet_name="calidad_asma")
-aire_3 = pd.read_excel("../fin2.xlsx", sheet_name="calidad_cancer")
+aire = load_data("fin.xlsx", sheet_name="aire")
+asma = load_data("fin.xlsx", sheet_name="asma")
+cancer = load_data("fin.xlsx", sheet_name="cancer")
+aire_2 = pd.read_excel("fin2.xlsx", sheet_name="calidad_asma")
+aire_3 = pd.read_excel("fin2.xlsx", sheet_name="calidad_cancer")
 
 st.title("Visualización a través de Gráficos")
 
